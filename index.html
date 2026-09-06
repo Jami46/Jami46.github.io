@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Karthik Jami — Software Tools Engineer building developer tools, backend-facing automation, device-integrated systems, and AI-augmented engineering workflows." />
+  <meta name="theme-color" content="#070A12" />
+  <title>Karthik Jami | Software Tools Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Karthik Jami home">KJ<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#cases">Case studies</a>
+      <a href="#ai">AI workflow</a>
+      <a href="#github">GitHub</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <div class="eyebrow">SOFTWARE TOOLS • SDE • BACKEND-FACING SYSTEMS • AI-AUGMENTED ENGINEERING</div>
+        <h1>
+          I build tools that make
+          <span class="gradient-text">complex engineering work</span>
+          feel simple.
+        </h1>
+        <p class="hero-lede">
+          I'm <strong>Karthik Jami</strong>, a Software Tools Engineer in San Diego working across
+          <strong>Python, JavaScript/TypeScript, Node.js, Docker, SQL, Swift, APIs, telemetry, simulators,
+          mobile/device systems, and CI/CD.</strong>
+        </p>
+
+        <div class="rotator" aria-label="Engineering focus">
+          <span>I like turning</span>
+          <strong id="rotatingPhrase">fragile workflows</strong>
+          <span>into reliable systems.</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#cases">Explore case studies</a>
+          <a class="btn secondary" href="https://github.com/Jami46" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/karthik-jami/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+
+
+      <div class="hero-visual hero-video-shell" id="heroVisual">
+        <video
+          class="hero-loop-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="assets/hero-poster.png"
+          aria-label="Animated developer workspace sequence">
+          <source src="assets/karthik-hero-imagepack.webm" type="video/webm">
+          <img src="assets/hero-poster.png" alt="Developer workspace animation poster">
+        </video>
+      </div>
+
+    </section>
+
+    <section class="metric-band">
+      <div class="container metric-grid" id="metricGrid"></div>
+    </section>
+
+    <section id="about" class="section container reveal smooth-stage">
+      <div class="section-kicker">01 / ABOUT</div>
+      <div class="two-col">
+        <h2>Automation was the entry point. Engineering systems became the work.</h2>
+        <div class="copy-stack">
+          <p>
+            My day-to-day work spans software tooling, qualification automation, device simulation,
+            telemetry and log analysis, backend verification, developer setup, static-analysis guardrails,
+            CI-integrated workflows, and cross-layer debugging.
+          </p>
+          <p>
+            The common thread is simple: find repeated engineering friction, understand the system deeply,
+            and build something reusable that removes it.
+          </p>
+        </div>
+      </div>
+
+      <div class="principles-grid">
+        <article class="principle-card reveal-card">
+          <span class="mini-index">01</span>
+          <h3>Build the tool, not the workaround.</h3>
+          <p>Reusable configuration, retries, diagnostics, reporting, and failure handling beat fragile one-off scripts.</p>
+        </article>
+        <article class="principle-card reveal-card">
+          <span class="mini-index">02</span>
+          <h3>Follow the failure across layers.</h3>
+          <p>Device behavior, mobile state, APIs, runtime exits, logs, telemetry, backend systems—debugging rarely respects boundaries.</p>
+        </article>
+        <article class="principle-card reveal-card">
+          <span class="mini-index">03</span>
+          <h3>Make engineers faster.</h3>
+          <p>The best internal software reduces repeated work, shortens feedback loops, and makes the next failure easier to understand.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section container reveal smooth-stage">
+      <div class="section-kicker">02 / ENGINEERING WORK</div>
+      <div class="section-heading-row">
+        <h2>What I build, automate, debug, and improve.</h2>
+        <p>A broader view of the engineering work behind the resume bullets.</p>
+      </div>
+      <div id="workGrid" class="work-grid"></div>
+    </section>
+
+    <section id="cases" class="section container reveal smooth-stage">
+      <div class="section-kicker">03 / CASE STUDIES</div>
+      <div class="section-heading-row">
+        <h2>How I approach real engineering problems.</h2>
+        <p>Open a case study to see the problem, engineering decisions, implementation shape, and outcome.</p>
+      </div>
+      <div id="caseGrid" class="case-grid"></div>
+    </section>
+
+    <section id="ai" class="section container reveal smooth-stage">
+      <div class="section-kicker">04 / AI-AUGMENTED ENGINEERING</div>
+      <div class="ai-layout">
+        <div>
+          <h2>I use Copilot as an engineering multiplier—not an autopilot.</h2>
+          <p class="muted-copy">
+            I use GitHub Copilot CLI, agents, custom instructions, and LLM workflows as part of day-to-day engineering:
+            accelerating investigation, mapping unfamiliar repositories, reviewing changes, prototyping developer tools,
+            and generating structured hypotheses that I verify against code, logs, tests, and runtime behavior.
+          </p>
+
+          <div class="flow-line">
+            <span>Understand</span><i>→</i><span>Map</span><i>→</i><span>Build</span><i>→</i><span>Test</span><i>→</i><span>Review</span><i>→</i><span>Ship</span>
+          </div>
+        </div>
+
+        <div id="aiCards" class="ai-cards"></div>
+      </div>
+    </section>
+
+    <section id="github" class="section container reveal smooth-stage">
+      <div class="section-kicker">05 / GITHUB PROJECTS</div>
+      <div class="section-heading-row">
+        <h2>Projects across iOS, systems, cloud, and ML.</h2>
+        <p>A mix of iOS, systems, cloud, embedded, and machine-learning work that shows range beyond my current day-to-day stack.</p>
+      </div>
+      <div id="githubGrid" class="github-grid"></div>
+      <div class="github-cta">
+        <a class="btn secondary" href="https://github.com/Jami46?tab=repositories" target="_blank" rel="noreferrer">View all repositories ↗</a>
+      </div>
+    </section>
+
+    <section id="experience" class="section container reveal smooth-stage">
+      <div class="section-kicker">06 / EXPERIENCE</div>
+      <div class="section-heading-row experience-title">
+        <h2>Engineering across healthcare, retail, and enterprise systems.</h2>
+        <p>Recent engineering work across developer tooling, device-integrated systems, automation architecture, backend validation, and cross-layer debugging.</p>
+      </div>
+
+      <article class="employer-card">
+        <div class="employer-top">
+          <div>
+            <div class="company-label">EMPLOYER</div>
+            <h3>Cigniti <span>(A Coforge Company)</span></h3>
+          </div>
+          <div class="company-pill">2024 — Present</div>
+        </div>
+        <div id="engagementList"></div>
+      </article>
+
+      <div class="earlier-block">
+        <div class="sub-kicker">EARLIER EXPERIENCE</div>
+        <div id="earlierExperience" class="timeline"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container reveal smooth-stage">
+      <div class="section-kicker">07 / TOOLKIT</div>
+      <div class="section-heading-row">
+        <h2>Languages, frameworks, platforms, and systems.</h2>
+        <p>Tools matter; knowing where and why to use them matters more.</p>
+      </div>
+      <div id="skillGroups" class="skill-groups"></div>
+    </section>
+
+    <section class="section container reveal smooth-stage">
+      <div class="section-kicker">08 / EDUCATION</div>
+      <div class="education-grid">
+        <article class="education-card feature">
+          <div>
+            <div class="edu-label">MASTER'S</div>
+            <h3>New Jersey Institute of Technology</h3>
+            <p>MS, Computer Science • December 2023</p>
+          </div>
+          <div class="gpa"><span>GPA</span><strong>3.6 / 4.0</strong></div>
+        </article>
+        <article class="education-card">
+          <div>
+            <div class="edu-label">BACHELOR'S</div>
+            <h3>Lovely Professional University</h3>
+            <p>BTech, Computer Science and Engineering • 2021</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal contact-section">
+      <div class="section-kicker">09 / CONTACT</div>
+      <div class="contact-card">
+        <div>
+          <div class="availability-pill">OPEN TO STRONG ENGINEERING OPPORTUNITIES</div>
+          <h2>Software Engineering, SDE, Software Tools, backend-facing systems, and developer productivity.</h2>
+          <p>
+            Based in San Diego and open to the right opportunity across major US tech hubs.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:karthikjami.jk@gmail.com">karthikjami.jk@gmail.com</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/karthik-jami/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="btn secondary" href="https://github.com/Jami46" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="case-modal" id="caseModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close case study">×</button>
+      <div id="modalBody"></div>
+    </article>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" title="Back to top"><span>↑</span></button>
+
+  <footer class="container footer">
+    <span>© <span id="year"></span> Karthik Jami</span>
+    <span>Software Tools Engineer • San Diego, CA</span>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
