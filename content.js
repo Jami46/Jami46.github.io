@@ -1,5 +1,5 @@
 window.PORTFOLIO = {
-  email: "karthikjami.jk@gmail.com",
+  email: "karthikjami.kj@gmail.com",
 
   rotatingPhrases: [
     "fragile workflows",
